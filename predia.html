@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head 
+         content must come *after* these tags -->
+    <title>Pre Dialysis Sheet</title>
+        <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/bootstrap-social.css" rel="stylesheet">
+    <link href="css/mystyles.css" rel="stylesheet">
+
+
+</head>
+
+<body style="background-color: #000000;">
+
+<div class="container-fluid">
+    <div id="Registerbox" style="margin-top:50px;" class="mainbox" >                    
+        <div class="panel panel-info" >
+			<div class="panel-heading">
+				<div class="panel-title"><b>Register Patient</b></div>
+			</div>     
+
+			<div style=" padding-top:30px;" class="panel-body bg-warning" >	
+			<form class="form-horizontal" role="form">
+			 
+				<div class="row">
+					<div class="form-group col-sm-3">
+						<label for="name" class="col-sm-4 control-label">Name</label>                        
+						<div class="col-sm-8">
+							<input required type="text" class="form-control" id="name" name="name" >
+						</div>
+					</div>
+					 
+					 
+					<div class="form-group col-sm-3">
+						<label for="address" class="col-sm-4 control-label">ID</label>
+						<div class="col-sm-8">
+							<input  required type="number" class="form-control" id="id_number" name="id_number"></input>
+						</div>
+					</div>
+
+					<div class="form-group col-sm-3">
+						<label for="address" class="col-sm-4 control-label">Age</label>
+						<div class="col-sm-8">
+							<input required type="number" class="form-control" id="age" name="age"></input>
+						</div>
+					</div>
+
+					<div class="form-group col-sm-3">
+                        <label for="gender" class="col-sm-4 control-label">Gender</label>
+                         <div class="col-sm-6">
+                            <select required class="form-control">
+                                <option value="" selected>-</option>
+                                <option value="male" >Male</option>
+                                <option value="female" >Female</option>
+                            </select>
+                        </div>
+					</div>
+					
+				 
+				</div>
+	
+				<div class="row">
+	
+					<div class="form-group col-sm-3">
+						<label for="name" class="col-sm-4 control-label">Date</label>                        
+						<div class="col-sm-8">
+							<input required type="text" class="form-control" id="date" name="date">
+						</div>
+					</div>
+					<div class="form-group col-sm-3">
+						<label for="name" class="col-sm-4 control-label">Time</label>                        
+						<div class="col-sm-8">
+							<input required type="text" class="form-control" id="time" name="time">
+						</div>
+					</div>
+					<div class="form-group col-sm-3">
+						<label for="name" class="col-sm-4 control-label">Start</label>                        
+						<div class="col-sm-8">
+							<input required type="text" class="form-control" id="start_time" name="start_time">
+						</div>
+					</div>
+					<div class="form-group col-sm-3">
+						<label for="name" class="col-sm-4 control-label">End</label>                        
+						<div class="col-sm-8">
+							<input required type="text" class="form-control" id="end_time" name="end_time">
+						</div>
+					</div>
+				
+				</div>
+				<div class="row">
+				<hr>
+				<h4 style= "padding-left:30px; padding-bottom:20px;"><b>Machine</b></h4>
+
+					<div class="form-group col-sm-3">
+						<label for="name" class="col-sm-5 control-label">Machine#</label>                        
+						<div class="col-sm-7">
+							<input required type="text" class="form-control" id="machine_no" name="machine_no">
+						</div>
+					</div>
+					<div class="form-group col-sm-3">
+						<label for="name" class="col-sm-5 control-label">Station#</label>                        
+						<div class="col-sm-7">
+							<input required type="text" class="form-control" id="station_no" name="station_no">
+						</div>
+					</div>
+					<div class="form-group col-sm-3">
+						<label for="name" class="col-sm-4 control-label">Nurse Name</label>                        
+						<div class="col-sm-8">
+							<input required type="text" class="form-control" id="nurse_name" name="nurse_name">
+						</div>
+					</div>
+					<div class="form-group col-sm-3">
+						<label for="name" class="col-sm-4 control-label">Test Passed?</label>                        
+						<div class="col-sm-8">
+							<input required type="checkbox" class="form-control" id="is_test_passed" name="is_test_passed" value="yes">
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="form-group col-sm-3">
+						<label for="name" class="col-sm-5 control-label">Dialyzer</label>                        
+						<div class="col-sm-7">
+							<input required type="text" class="form-control" id="dialyzer" name="dialyzer">
+						</div>
+					</div>
+					<div class="form-group col-sm-3">
+						<label for="name" class="col-sm-5 control-label">Reuse#</label>                        
+						<div class="col-sm-7">
+							<input required type="number" class="form-control" id="reuse_no" name="reuse_no">
+						</div>
+					</div>
+					<div class="form-group col-sm-3">
+						<label for="name" class="col-sm-4 control-label">Line Created?</label>                        
+						<div class="col-sm-8">
+							<label class="radio-inline">
+							<input type="radio" name="line_created" value="yes">Yes</label>
+							<label class="radio-inline">
+							<input type="radio" name="line_created" value="no">No</label>
+						</div>
+					</div>
+					<div class="form-group col-sm-3">
+						<label for="name" class="col-sm-4 control-label">Checked By: </label>                        
+						<div class="col-sm-8">
+							<input required type="text" class="form-control" id="checked_by" name="checked_by">
+						</div>
+					</div>
+				</div>
+				<div class="row">
+				<hr>
+				<h4 style= "padding-left:30px; padding-bottom:20px;"><b>Anticoagulation - Heparin</b></h4>
+					<div class="form-group col-sm-3">
+						<label for="name" class="col-sm-5 control-label">Bolus</label>                        
+						<div class="col-sm-7">
+							<input required type="number" class="form-control" id="bolus" name="bolus">
+						</div>
+					</div>
+					<div class="form-group col-sm-3">
+						<label for="name" class="col-sm-5 control-label">Hourly</label>                        
+						<div class="col-sm-7">
+							<input required type="text" class="form-control" id="hourly" name="hourly">
+						</div>
+					</div>
+
+				</div>
+			</form>
+			</div>
+        </div>
+    </div>
+    
+                
+                
+</div>
+</body>
+</html>
